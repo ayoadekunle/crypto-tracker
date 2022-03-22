@@ -9,14 +9,18 @@ const fetchTrendingCoins = () => {
         trendingCoins = data;
         console.log(trendingCoins);
         Object.keys(data).forEach((key) => {
-            console.log(data[key].image)
+            console.log(data[key].image);
             let div = document.createElement("div");
             let img = document.createElement("img");
-            div.setAttribute("class", "carousel-item")
+            if (key === "0") {
+                div.setAttribute("class", "carousel-item active");
+            } else {
+                div.setAttribute("class", "carousel-item");
+            }
             img.setAttribute("src", data[key].image);
             img.setAttribute("class", "d-block w-100");
             div.appendChild(img);
-            let elem = document.getElementById("carousel-inner").appendChild(div);
+            document.querySelector("#carousel-inner").appendChild(div);
         });
     }).catch(e => {
         console.log(e);

@@ -5,47 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Log in to your account - Crypto Tracker</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="login.css">
     <script type="text/javascript" src="login.js"></script>
 </head>
-<body onload="fetchTrendingCoins()">
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" id="carousel-inner">
-        <div class="carousel-item active">
-            <h2>Crypto Tracker</h2>
+<body onload="fetchTrendingCoins()">
+<div class="carousel-container">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-inner">
         </div>
     </div>
 </div>
 
-<div class="card">
-    <form>
+<div class="card-container">
+    <div class="card">
         <h3 class="card-title">Log in to your account</h3>
-        <div class="form-group">
-            <label for="email">E-mail address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com"/>
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password"/>
-        </div>
-        <button type="submit" class="btn submit">Log In</button>
+        <form>
+            <div class="form-floating">
+                <input type="email" class="form-control mb-3" id="email" placeholder="name@example.com"/>
+                <label for="email">E-mail address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control mb-2" id="password" placeholder="Password"/>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" class="btn submit">Log In</button>
+        </form>
         <hr/>
         <button class="btn create-account">Create an account</button>
-    </form>
+    </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
 </body>

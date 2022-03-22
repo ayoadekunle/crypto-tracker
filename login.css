@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-size: large;
 }
 
 body {
@@ -85,10 +86,10 @@ hr {
 
 input:hover,
 input:active,
-input:focus {
+input[type="password"]:focus,
+input[type="email"]:focus {
     border-color: #52796F;
     color: #2F3E46;
     outline: 0 !important;
-    -webkit-appearance:none;
     box-shadow: none !important;
 }

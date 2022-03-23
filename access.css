@@ -23,7 +23,7 @@ body {
 
 .carousel-item {
     padding: 0 50px 0 50px;
-    width: 250px;
+    width: 400px;
 }
 
 .carousel-inner .carousel-item {
@@ -101,8 +101,8 @@ body {
 
 .submit:active,
 .submit:hover {
-    border-color: #6EA4C4;
-    color: #6EA4C4;
+    border-color: #73BDE7;
+    color: #73BDE7;
     outline: 0 !important;
     -webkit-appearance: none;
     box-shadow: none !important;

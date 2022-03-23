@@ -16,7 +16,7 @@ const fetchTrendingCoins = () => {
                 div.setAttribute("class", "carousel-item");
             }
             img.setAttribute("src", data[key].image);
-            img.setAttribute("class", "d-block w-100");
+            img.setAttribute("class", "d-block w-120");
             div.appendChild(img);
             document.querySelector("#carousel-inner").appendChild(div);
         });

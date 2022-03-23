@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-size: large;
+    font-size: 18px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     display: inline-flex;
 }
 
-.carousel-container{
+.carousel-container, .card-container {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -30,13 +30,6 @@ body {
     transition: transform 2s ease, -webkit-transform 2s ease;
 }
 
-.card-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
     background-color: #CAD2C5;
     border: none;
@@ -49,25 +42,47 @@ body {
 
 .card-title {
     text-align: center;
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
-.form-control {
-    height: 65px !important;
+.row {
+    margin: 0;
+}
+
+.pull-left {
+    padding: 5px 5px 5px 0;
+}
+
+.pull-right {
+    padding: 5px 0 5px 5px;
+}
+
+.col-12 {
+    padding: 5px 0;
+}
+
+.form-label {
+    color: #2F3E46;
+    font-size: 15px;
+}
+
+.form-control:focus + .form-label{
+    color: #84A98C;
 }
 
 .btn {
     width: 100%;
     height: 60px;
-    margin: 10px 0;
     color: white;
+    font-size: 15px;
 }
 
-.submit {
+.sign-in, .sign-up {
     background-color: #52796F;
 }
 
-.create-account {
+.sign-in-request, .sign-up-request {
+    margin: 5px 0;
     background-color: #84A98C;
 }
 
@@ -80,16 +95,21 @@ hr {
     border-color: #52796F;
     color: #2F3E46;
     outline: 0 !important;
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     box-shadow: none !important;
 }
 
-input:hover,
-input:active,
-input[type="password"]:focus,
-input[type="email"]:focus {
+.form-control:hover,
+.form-control:active,
+.form-control[type="text"]:focus,
+.form-control[type="password"]:focus,
+.form-control[type="email"]:focus {
     border-color: #52796F;
-    color: #2F3E46;
     outline: 0 !important;
+    -webkit-appearance: none;
     box-shadow: none !important;
+}
+
+#sign-in-card.hide, #sign-up-card.hide {
+    display: none;
 }

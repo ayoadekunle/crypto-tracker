@@ -7,9 +7,7 @@ const fetchTrendingCoins = () => {
         return response.json();
     }).then(data => {
         trendingCoins = data;
-        console.log(trendingCoins);
         Object.keys(data).forEach((key) => {
-            console.log(data[key].image);
             let div = document.createElement("div");
             let img = document.createElement("img");
             if (key === "0") {
@@ -26,3 +24,17 @@ const fetchTrendingCoins = () => {
         console.log(e);
     });
 };
+
+const renderSignIn = () => {
+    const signUpCard = document.getElementById("sign-up-card");
+    const signInCard = document.getElementById("sign-in-card");
+    signUpCard.setAttribute("class", "card hide");
+    signInCard.setAttribute("class", "card");
+}
+
+const renderSignUp = () => {
+    const signUpCard = document.getElementById("sign-up-card");
+    const signInCard = document.getElementById("sign-in-card");
+    signInCard.setAttribute("class", "card hide");
+    signUpCard.setAttribute("class", "card");
+}

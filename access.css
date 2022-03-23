@@ -23,7 +23,7 @@ body {
 
 .carousel-item {
     padding: 0 50px 0 50px;
-    width: 400px;
+    width: min-content;
 }
 
 .carousel-inner .carousel-item {

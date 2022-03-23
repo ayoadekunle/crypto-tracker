@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-color: #2F3E46;
+    background-color: #0C3146;
     font-family: "Heiti SC", serif;
     display: inline-flex;
 }
@@ -31,13 +31,16 @@ body {
 }
 
 .card {
-    background-color: #CAD2C5;
+    background-color: #9AC0D6;
     border: none;
     width: 500px;
-    color: #2F3E46;
+    color: #0C3146;
     padding: 30px;
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+    border-radius: 10px;
+}
+
+.card.hide, .card.hide {
+    display: none;
 }
 
 .card-title {
@@ -62,12 +65,27 @@ body {
 }
 
 .form-label {
-    color: #2F3E46;
+    color: #0C3146;
     font-size: 15px;
 }
 
 .form-control:focus + .form-label{
-    color: #84A98C;
+    color: #6EA4C4;
+}
+
+.form-control {
+    border: none;
+}
+
+.form-control:hover,
+.form-control:active,
+.form-control[type="text"]:focus,
+.form-control[type="password"]:focus,
+.form-control[type="email"]:focus {
+    border-color: #0F3D57;
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
 }
 
 .btn {
@@ -77,39 +95,33 @@ body {
     font-size: 15px;
 }
 
-.sign-in, .sign-up {
-    background-color: #52796F;
+.submit {
+    background-color: #105C87;
 }
 
-.sign-in-request, .sign-up-request {
-    margin: 5px 0;
-    background-color: #84A98C;
+.submit:active,
+.submit:hover {
+    border-color: #6EA4C4;
+    color: #6EA4C4;
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
 }
 
 hr {
     margin: 5px 0 5px 0;
 }
 
-.btn:active,
-.btn:hover {
-    border-color: #52796F;
-    color: #2F3E46;
+.request {
+    margin: 5px 0;
+    background-color: #1888C9;
+}
+
+.request:active,
+.request:hover {
+    border-color: #0F3D57;
+    color: #0F3D57;
     outline: 0 !important;
     -webkit-appearance: none;
     box-shadow: none !important;
-}
-
-.form-control:hover,
-.form-control:active,
-.form-control[type="text"]:focus,
-.form-control[type="password"]:focus,
-.form-control[type="email"]:focus {
-    border-color: #52796F;
-    outline: 0 !important;
-    -webkit-appearance: none;
-    box-shadow: none !important;
-}
-
-#sign-in-card.hide, #sign-up-card.hide {
-    display: none;
 }
